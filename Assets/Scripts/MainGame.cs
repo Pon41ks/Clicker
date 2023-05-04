@@ -32,6 +32,11 @@ public class MainGame : MonoBehaviour
         PlayerPrefs.SetInt("totalMoney", totalMoney);
     }
 
+    private void OnApplicationPause(bool pause)
+    {
+        
+    }
+
 
     public void ToAchivments()
     {
