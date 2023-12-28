@@ -10,15 +10,6 @@ public class Shop : MonoBehaviour
     {
         shopAnimator = GetComponent<Animator>();
     }
-    public void OpenShop()
-    {
-        openShopButton.SetActive(false);
-        shopAnimator.SetTrigger("OpenShop");
-    }
-
-    public void CloseShop()
-    {
-        openShopButton.SetActive(true);
-        shopAnimator.SetTrigger("ShopClose");
-    }
+    
+    
 }
