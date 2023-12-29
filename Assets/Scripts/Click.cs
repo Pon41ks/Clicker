@@ -21,15 +21,15 @@ public class Click : MonoBehaviour
     [SerializeField] private Slider slider;
 
     public static readonly UnityEvent<int> AddScore = new();
-   
-
+    
 
     public void OnClick()
     {
         if (score != maxValue)
-        {
+        { 
             AddScore.Invoke(score);
             Balance.AddCoin();
+            Debug.Log(Balance.coins);
             score++;
             slider.value = score;
             currentClicks.text = $"{score} / {maxValue}";
