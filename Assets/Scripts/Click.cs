@@ -12,11 +12,10 @@ public class Click : MonoBehaviour
     [Header("Parameters")]
     [SerializeField] private int score;
     [SerializeField] private int maxValue;
+    [SerializeField] private int currentLevel;
 
     [Header("Properties")]
-    [SerializeField] private GameObject gameCanvas;
-    [SerializeField] private Image imageObj;
-    [SerializeField] private Sprite result;
+    [SerializeField] private GameObject gameCanvas;    
     [SerializeField] private TextMeshProUGUI currentClicks;
     [SerializeField] private Slider slider;
 
@@ -36,7 +35,7 @@ public class Click : MonoBehaviour
         }
         else
         {
-            SceneManager.LoadScene(0);
+            SceneManager.LoadScene(currentLevel);
         }
 
     }

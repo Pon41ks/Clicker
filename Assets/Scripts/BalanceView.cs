@@ -12,10 +12,8 @@ public class BalanceView : MonoBehaviour
 
     private void Awake()
     { 
-        
         Balance.takeCoin.AddListener(ChangeCoinCount);
-        
-        
+        ChangeCoinCount();
     }
     private void ChangeCoinCount()
     {

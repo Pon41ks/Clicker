@@ -9,13 +9,15 @@ using UnityEngine.SceneManagement;
 public class Manager : MonoBehaviour
 {
     [Header("parameters")]
-    [SerializeField] private int maxValueScore;
-
+    [SerializeField] private  int maxValueScore;
+    
 
     [Header("Properties")]
     [SerializeField] private Animator gameAnimator;
     [SerializeField] private Button startButton;
     [SerializeField] private GameObject shopButton;
+    [SerializeField] private Image imageObj;
+    [SerializeField] private Sprite result;
 
     private void Awake()
     {
@@ -37,16 +39,16 @@ public class Manager : MonoBehaviour
     }
     public void ChangeImage(int score)
     {
-
-        if (score == maxValueScore)
+        if(score == maxValueScore)
         {
             gameAnimator.SetTrigger("ChangeImage");
-
         }
-
-
-
-
+       
+       
+    }
+    public void ChangeSprite()
+    {
+        imageObj.sprite = result;
     }
 
 }
