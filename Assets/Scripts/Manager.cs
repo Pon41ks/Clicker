@@ -14,14 +14,13 @@ public class Manager : MonoBehaviour
 
     [Header("Properties")]
     [SerializeField] private Animator gameAnimator;
-    [SerializeField] private Button startButton;
-    [SerializeField] private GameObject shopButton;
     [SerializeField] private Image imageObj;
     [SerializeField] private Sprite result;
+    [SerializeField] private GameObject clickButton;
 
     private void Awake()
     {
-        Click.AddScore.AddListener(ChangeImage);
+        Click.AddScore.AddListener(ChangeImageAndShowVictoryPanel);
 
     }
     void Start()
@@ -37,15 +36,21 @@ public class Manager : MonoBehaviour
         gameAnimator.SetTrigger("SecondAnim");
 
     }
-    public void ChangeImage(int score)
+    public void ChangeImageAndShowVictoryPanel(int score)
     {
         if(score == maxValueScore)
         {
             gameAnimator.SetTrigger("ChangeImage");
+            gameAnimator.SetTrigger("Victory");
+            clickButton.SetActive(false);
         }
        
        
     }
+
+    
+
+    
     public void ChangeSprite()
     {
         imageObj.sprite = result;
