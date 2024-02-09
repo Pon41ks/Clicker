@@ -42,7 +42,6 @@ public class Manager : MonoBehaviour
         {
             gameAnimator.SetTrigger("ChangeImage");
             gameAnimator.SetTrigger("Victory");
-            clickButton.SetActive(false);
         }
        
        
