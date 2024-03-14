@@ -45,9 +45,9 @@ public class Click : MonoBehaviour
         }     
     }
 
-    public void RestartLevel()
+    public void NextLevel()
     {
-        SceneManager.LoadScene(currentLevel);
+        SceneManager.LoadScene(currentLevel + 1);
     }
 
 

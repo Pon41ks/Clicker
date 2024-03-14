@@ -23,6 +23,7 @@ public class LevelControl : MonoBehaviour
     public void Awake()
     {
         AccessUpdate();
+
     }
     private void AccessUpdate()
     {
@@ -34,6 +35,7 @@ public class LevelControl : MonoBehaviour
             levelClosed.sprite = levelOpen;
         }
     }
+    
 
     public void BuyLevel()
     {
@@ -43,7 +45,6 @@ public class LevelControl : MonoBehaviour
             {
                 PlayerPrefs.SetInt(levelName + "Access", 1);              
                 PlayerPrefs.SetInt("Coin", Balance.coins - price);
-                
                 AccessUpdate();
             }
         }

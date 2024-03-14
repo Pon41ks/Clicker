@@ -39,7 +39,7 @@ public class SoundManager : MonoBehaviour
             soundButtonOn.sprite = soundButtonOnImage;
 
         }
-
+        
     }
     public void OffMusic()
     {
