@@ -8,11 +8,13 @@ public class SettingsScript : MonoBehaviour
 {
 
     [SerializeField] private Animator settingsAnimator;
+
     [SerializeField] private UnityEngine.UI.Button settingsButton;
+
     [SerializeField] private GameObject settingsPanel;
     
 
-    void Start()
+    void Awake()
     {
         settingsAnimator = GetComponent<Animator>();
     }
@@ -27,7 +29,7 @@ public class SettingsScript : MonoBehaviour
         {
             settingsAnimator.SetTrigger("CloseSettings");
         }
-        
+
         
         
     }

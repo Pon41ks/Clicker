@@ -13,41 +13,45 @@ public class Click : MonoBehaviour
     [SerializeField] private int score;
     [SerializeField] private int maxValue;
     [SerializeField] private int currentLevel;
-    
- 
+
+
     [Header("Properties")]
-    [SerializeField] private GameObject gameCanvas;    
+    [SerializeField] private GameObject gameCanvas;
     [SerializeField] private TextMeshProUGUI currentClicks;
     [SerializeField] private Image mask;
 
     public static readonly UnityEvent<int> AddScore = new();
-    
+
     private void GetcurrentFill()
     {
         float fillAmount = (float)score / (float)maxValue;
         mask.fillAmount = fillAmount;
     }
-    private void Update()
-    {
-        
-    }
 
     public void OnClick()
     {
         if (score != maxValue)
-        { 
+        {
             AddScore.Invoke(score);
             Balance.AddCoin();
-            Debug.Log(Balance.coins);
             score++;
             currentClicks.text = $"{score} / {maxValue}";
             GetcurrentFill();
-        }     
+        }
     }
 
     public void NextLevel()
     {
-        SceneManager.LoadScene(currentLevel + 1);
+        if (currentLevel != 5)
+        {
+            SceneManager.LoadScene(currentLevel + 1);
+
+        }
+
+        else
+        {
+            SceneManager.LoadScene(currentLevel);
+        }
     }
 
 

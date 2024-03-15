@@ -242,7 +242,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 3123849462234944516}
+      - m_Target: {fileID: 0}
         m_TargetAssemblyTypeName: SoundManager, Assembly-CSharp
         m_MethodName: OffSounds
         m_Mode: 1
@@ -451,7 +451,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 3123849462234944516}
+      - m_Target: {fileID: 0}
         m_TargetAssemblyTypeName: SoundManager, Assembly-CSharp
         m_MethodName: OffMusic
         m_Mode: 1
@@ -607,7 +607,6 @@ GameObject:
   - component: {fileID: 3123849462234944523}
   - component: {fileID: 3123849462234944517}
   - component: {fileID: 3123849462234944522}
-  - component: {fileID: 3123849462234944516}
   m_Layer: 5
   m_Name: SettingsManager
   m_TagString: Untagged
@@ -675,23 +674,3 @@ MonoBehaviour:
   settingsAnimator: {fileID: 3123849462234944517}
   settingsButton: {fileID: 3123849462049136122}
   settingsPanel: {fileID: 3123849461336065487}
---- !u!114 &3123849462234944516
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 3123849462234944520}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 799a162cad4b43b469a89153047c4286, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  music: {fileID: 0}
-  sound: {fileID: 0}
-  musicButtonOn: {fileID: 3123849461432550596}
-  soundButtonOn: {fileID: 3123849461285507443}
-  musicButtonOff: {fileID: 21300000, guid: 7c75f08626ba7594d8fa7c6697913e79, type: 3}
-  musicButtonOnImage: {fileID: 21300000, guid: 93012874d1eb09b4a9adbb3ebdb9ff30, type: 3}
-  soundButtonOff: {fileID: 21300000, guid: 748865a28a860354b85edc0676e62099, type: 3}
-  soundButtonOnImage: {fileID: 21300000, guid: 3f5db1af0fbf30a4399f12f8ab722674, type: 3}

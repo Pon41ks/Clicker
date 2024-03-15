@@ -14,9 +14,12 @@ public class Manager : MonoBehaviour
 
     [Header("Properties")]
     [SerializeField] private Animator gameAnimator;
+
     [SerializeField] private Image imageObj;
     [SerializeField] private Sprite result;
+
     [SerializeField] private GameObject clickButton;
+    [SerializeField] private GameObject shopCloseButton;
 
     private void Awake()
     {
@@ -42,14 +45,12 @@ public class Manager : MonoBehaviour
         {
             gameAnimator.SetTrigger("ChangeImage");
             gameAnimator.SetTrigger("Victory");
+            shopCloseButton.SetActive(false);
+
         }
-       
-       
+ 
     }
-
-    
-
-    
+   
     public void ChangeSprite()
     {
         imageObj.sprite = result;

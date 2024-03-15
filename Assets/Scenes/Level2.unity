@@ -360,6 +360,17 @@ Canvas:
   m_SortingLayerID: 0
   m_SortingOrder: 0
   m_TargetDisplay: 0
+--- !u!114 &57241137 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 4244046178509683671, guid: 48cdb30870b1b734fa34a708435a3571, type: 3}
+  m_PrefabInstance: {fileID: 1249128885}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fe87c0e1cc204ed48ad3b37840f39efc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &189168527
 GameObject:
   m_ObjectHideFlags: 0
@@ -596,6 +607,22 @@ Canvas:
   m_SortingLayerID: 0
   m_SortingOrder: 0
   m_TargetDisplay: 0
+--- !u!1 &618242474 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 4244046178122550965, guid: 48cdb30870b1b734fa34a708435a3571, type: 3}
+  m_PrefabInstance: {fileID: 1249128885}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &685623339 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 4244046176751464032, guid: 48cdb30870b1b734fa34a708435a3571, type: 3}
+  m_PrefabInstance: {fileID: 1249128885}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fe87c0e1cc204ed48ad3b37840f39efc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &693506610
 GameObject:
   m_ObjectHideFlags: 0
@@ -1021,6 +1048,14 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 31267142}
     m_Modifications:
+    - target: {fileID: 4244046176751464035, guid: 48cdb30870b1b734fa34a708435a3571, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
+      value: 
+      objectReference: {fileID: 1561407298}
+    - target: {fileID: 4244046176751464035, guid: 48cdb30870b1b734fa34a708435a3571, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
+      value: OffSounds
+      objectReference: {fileID: 0}
     - target: {fileID: 4244046177507064156, guid: 48cdb30870b1b734fa34a708435a3571, type: 3}
       propertyPath: VictoryPanel
       value: 
@@ -1121,6 +1156,14 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 4244046178509683670, guid: 48cdb30870b1b734fa34a708435a3571, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
+      value: 
+      objectReference: {fileID: 1561407298}
+    - target: {fileID: 4244046178509683670, guid: 48cdb30870b1b734fa34a708435a3571, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
+      value: OffMusic
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 48cdb30870b1b734fa34a708435a3571, type: 3}
 --- !u!114 &1398941143 stripped
@@ -1139,6 +1182,11 @@ RectTransform:
   m_CorrespondingSourceObject: {fileID: 4244046178378088045, guid: 48cdb30870b1b734fa34a708435a3571, type: 3}
   m_PrefabInstance: {fileID: 1249128885}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &1552434050 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 4244046177583944817, guid: 48cdb30870b1b734fa34a708435a3571, type: 3}
+  m_PrefabInstance: {fileID: 1249128885}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &1561407290
 GameObject:
   m_ObjectHideFlags: 0
@@ -1154,6 +1202,7 @@ GameObject:
   - component: {fileID: 1561407293}
   - component: {fileID: 1561407292}
   - component: {fileID: 1561407291}
+  - component: {fileID: 1561407298}
   m_Layer: 5
   m_Name: MainCanvas
   m_TagString: Untagged
@@ -1198,6 +1247,7 @@ MonoBehaviour:
   imageObj: {fileID: 189168531}
   result: {fileID: 21300000, guid: 14d3cf9cf0de1f4488142c90cd7da2ec, type: 3}
   clickButton: {fileID: 189168527}
+  shopCloseButton: {fileID: 1552434050}
 --- !u!114 &1561407293
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1302,6 +1352,29 @@ RectTransform:
   m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 0, y: 0}
   m_Pivot: {x: 0, y: 0}
+--- !u!114 &1561407298
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1561407290}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 799a162cad4b43b469a89153047c4286, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  music: {fileID: 1852677464}
+  sound: {fileID: 1158378068}
+  victoryMusic: {fileID: 1883199192}
+  musicButtonOn: {fileID: 57241137}
+  soundButtonOn: {fileID: 685623339}
+  musicButtonOff: {fileID: 21300000, guid: 7c75f08626ba7594d8fa7c6697913e79, type: 3}
+  musicButtonOnImage: {fileID: 21300000, guid: 93012874d1eb09b4a9adbb3ebdb9ff30, type: 3}
+  soundButtonOff: {fileID: 21300000, guid: 748865a28a860354b85edc0676e62099, type: 3}
+  soundButtonOnImage: {fileID: 21300000, guid: 3f5db1af0fbf30a4399f12f8ab722674, type: 3}
+  victoryPanel: {fileID: 1883199190}
+  shopCanvas: {fileID: 618242474}
 --- !u!1 &1729771719
 GameObject:
   m_ObjectHideFlags: 0
@@ -1734,6 +1807,11 @@ GameObject:
 --- !u!224 &1883199191 stripped
 RectTransform:
   m_CorrespondingSourceObject: {fileID: 32759822065958476, guid: df69989aaca60a24db06d9c9be7c8504, type: 3}
+  m_PrefabInstance: {fileID: 1776515168}
+  m_PrefabAsset: {fileID: 0}
+--- !u!82 &1883199192 stripped
+AudioSource:
+  m_CorrespondingSourceObject: {fileID: 1913969060036619655, guid: df69989aaca60a24db06d9c9be7c8504, type: 3}
   m_PrefabInstance: {fileID: 1776515168}
   m_PrefabAsset: {fileID: 0}
 --- !u!1 &1926389710
