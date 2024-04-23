@@ -1,34 +1,19 @@
-using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
-using UnityEngine.UI;
-
-
 public  class LevelAccessControl : MonoBehaviour
 {
+    [SerializeField] private  LevelControl[] checkAccess;
 
-    public  LevelControl[] checkAccess = {  };
-
-
-
-    public  void BuyLevel(int indexLevel)
+    public void SelectLevel(int indexLevel)
     {
-        if (checkAccess[indexLevel].isCollected == false)
+        if (checkAccess[indexLevel].IsCollected == false)
         {
-            if (SaveData.Current.coinsCount >= checkAccess[indexLevel].price)
-            {
-                checkAccess[indexLevel].ChangeSprites();
-                checkAccess[indexLevel].isCollected = true;
-                Balance.coins -= checkAccess[indexLevel].price;
-            }
+            checkAccess[indexLevel].BuyLevel(indexLevel);
+            
         }
         else if (checkAccess[indexLevel] == true)
         {
             SceneManager.LoadScene(indexLevel);
-            
         }
-            
     }
-
 }

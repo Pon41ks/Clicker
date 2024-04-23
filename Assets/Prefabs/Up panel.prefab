@@ -144,7 +144,7 @@ MonoBehaviour:
       m_Calls:
       - m_Target: {fileID: 6401557996669197628}
         m_TargetAssemblyTypeName: LevelAccessControl, Assembly-CSharp
-        m_MethodName: BuyLevel
+        m_MethodName: SelectLevel
         m_Mode: 3
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -464,7 +464,7 @@ MonoBehaviour:
       m_Calls:
       - m_Target: {fileID: 6401557996669197628}
         m_TargetAssemblyTypeName: LevelAccessControl, Assembly-CSharp
-        m_MethodName: BuyLevel
+        m_MethodName: SelectLevel
         m_Mode: 3
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -638,7 +638,7 @@ MonoBehaviour:
       m_Calls:
       - m_Target: {fileID: 6401557996669197628}
         m_TargetAssemblyTypeName: LevelAccessControl, Assembly-CSharp
-        m_MethodName: BuyLevel
+        m_MethodName: SelectLevel
         m_Mode: 3
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -1676,7 +1676,7 @@ MonoBehaviour:
       m_Calls:
       - m_Target: {fileID: 6401557996669197628}
         m_TargetAssemblyTypeName: LevelAccessControl, Assembly-CSharp
-        m_MethodName: BuyLevel
+        m_MethodName: SelectLevel
         m_Mode: 3
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -1830,7 +1830,7 @@ MonoBehaviour:
       m_Calls:
       - m_Target: {fileID: 6401557996669197628}
         m_TargetAssemblyTypeName: LevelAccessControl, Assembly-CSharp
-        m_MethodName: BuyLevel
+        m_MethodName: SelectLevel
         m_Mode: 3
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -2239,7 +2239,7 @@ MonoBehaviour:
       m_Calls:
       - m_Target: {fileID: 6401557996669197628}
         m_TargetAssemblyTypeName: LevelAccessControl, Assembly-CSharp
-        m_MethodName: BuyLevel
+        m_MethodName: SelectLevel
         m_Mode: 3
         m_Arguments:
           m_ObjectArgument: {fileID: 0}

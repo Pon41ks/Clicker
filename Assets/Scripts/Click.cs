@@ -32,11 +32,11 @@ public class Click : MonoBehaviour
     {
         if (score != maxValue)
         {
-            AddScore.Invoke(score);
             Balance.AddCoin();
             score++;
             currentClicks.text = $"{score} / {maxValue}";
             GetcurrentFill();
+            AddScore.Invoke(score);
         }
     }
 

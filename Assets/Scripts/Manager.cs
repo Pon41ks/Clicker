@@ -1,9 +1,5 @@
-using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
-using UnityEngine.SocialPlatforms.Impl;
 using UnityEngine.UI;
-using UnityEngine.SceneManagement;
 
 [RequireComponent(typeof(Animator))]
 public class Manager : MonoBehaviour
@@ -20,18 +16,11 @@ public class Manager : MonoBehaviour
 
     [SerializeField] private GameObject clickButton;
     [SerializeField] private GameObject shopCloseButton;
-    [SerializeField] private GameObject victoryEffect;
 
     private void Awake()
     {
         Click.AddScore.AddListener(ChangeImageAndShowVictoryPanel);
         SaveData.Current = (SaveData)SerializationManager.Load();
-                
-
-    }
-    private void Update()
-    {
-        Win();
     }
     private void Start()
     {
@@ -39,8 +28,6 @@ public class Manager : MonoBehaviour
         gameAnimator.SetTrigger("FirstAnim");
         Debug.Log(SaveData.Current.coinsCount);
         SerializationManager.Save(SaveData.Current);
-
-
     }
 
     public void PlaySecondAnim()
@@ -55,24 +42,11 @@ public class Manager : MonoBehaviour
             gameAnimator.SetTrigger("ChangeImage");
             gameAnimator.SetTrigger("Victory");
             shopCloseButton.SetActive(false);
-            
-
+            SerializationManager.Save(SaveData.Current);
         }
- 
     }
-   
     public void ChangeSprite()
     {
         imageObj.sprite = result;
     }
-
-    private void Win()
-    {
-        if (victoryEffect.activeInHierarchy)
-        {
-            SerializationManager.Save(SaveData.Current);
-            
-        }
-    }
-
 }
