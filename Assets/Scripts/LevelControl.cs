@@ -8,7 +8,7 @@ public class LevelControl : MonoBehaviour
     [Header("Parameters")]
     [SerializeField] private string levelName;
     [SerializeField] private int price;
-    [SerializeField] private int levelNumber;
+    private int _levelNumber;
     public bool IsCollected { get; private set; }
     
     [Header("References")]
@@ -16,7 +16,15 @@ public class LevelControl : MonoBehaviour
     [SerializeField] private Image blockImage;
     [SerializeField] private Sprite unBlock;
     [SerializeField] private Sprite levelOpen;
-    
+
+    public void Initialize(int indexLevel)
+    {
+        _levelNumber = indexLevel;
+        if (SaveData.Current.levels[_levelNumber])
+        {
+            ChangeSprites();
+        }
+    }
     public void BuyLevel(int indexLevel)
     {
         if (SaveData.Current.coinsCount >= price)
@@ -36,6 +44,6 @@ public class LevelControl : MonoBehaviour
 
     public void GoToNextLevel()
     {
-        SceneManager.LoadScene(levelNumber);
+        SceneManager.LoadScene(_levelNumber);
     }
 }

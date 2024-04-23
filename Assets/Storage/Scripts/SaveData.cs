@@ -7,8 +7,7 @@ public class SaveData
         get => _current ??= new SaveData
         {
             coinsCount = 0,
-            
-
+            levels = new [] {true, false, false, false, false, false}
         };
         set
         {

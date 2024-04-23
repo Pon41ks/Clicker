@@ -168,7 +168,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: 0, y: -0.0008544922}
+  m_AnchoredPosition: {x: 0, y: -0.0009765625}
   m_SizeDelta: {x: 0, y: 0}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &209505340
@@ -1609,7 +1609,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3ec8d1817530a4744b44284241248ec2, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  score: 0
   maxValue: 30
   currentLevel: 0
   gameCanvas: {fileID: 0}
@@ -1740,7 +1739,6 @@ GameObject:
   - component: {fileID: 1969615392}
   - component: {fileID: 1969615391}
   - component: {fileID: 1969615395}
-  - component: {fileID: 1969615399}
   - component: {fileID: 1969615396}
   - component: {fileID: 1969615397}
   - component: {fileID: 1969615398}
@@ -1850,7 +1848,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3ec8d1817530a4744b44284241248ec2, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  score: 0
   maxValue: 30
   currentLevel: 0
   gameCanvas: {fileID: 1027554068}
@@ -1868,13 +1865,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: af84491f3ab3fb84987365ee10bb1a9a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  maxValueScore: 29
+  maxValueScore: 30
   gameAnimator: {fileID: 1969615397}
   imageObj: {fileID: 981402574}
   result: {fileID: 21300000, guid: ec11fce9e0ed8164bad9ea5bcea0e79e, type: 3}
   clickButton: {fileID: 981402570}
   shopCloseButton: {fileID: 933872736}
-  victoryEffect: {fileID: 286293023}
 --- !u!95 &1969615397
 Animator:
   serializedVersion: 5
@@ -1919,18 +1915,6 @@ MonoBehaviour:
   soundButtonOnImage: {fileID: 21300000, guid: 3f5db1af0fbf30a4399f12f8ab722674, type: 3}
   victoryPanel: {fileID: 1767145942}
   shopCanvas: {fileID: 1056117239}
---- !u!114 &1969615399
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1969615390}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 905f8c8e3d77f40c7a278568c321136a, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!114 &2026207839 stripped
 MonoBehaviour:
   m_CorrespondingSourceObject: {fileID: 7904481550855674315, guid: 6930a12f91f6ec94b83a3906bd0263f7, type: 3}
@@ -1960,7 +1944,7 @@ PrefabInstance:
       objectReference: {fileID: 1518895286}
     - target: {fileID: 4244046176746866250, guid: 48cdb30870b1b734fa34a708435a3571, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
-      value: BuyLevel
+      value: SelectLevel
       objectReference: {fileID: 0}
     - target: {fileID: 4244046176746866250, guid: 48cdb30870b1b734fa34a708435a3571, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_IntArgument
@@ -2000,7 +1984,7 @@ PrefabInstance:
       objectReference: {fileID: 1518895286}
     - target: {fileID: 4244046177187234229, guid: 48cdb30870b1b734fa34a708435a3571, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
-      value: BuyLevel
+      value: SelectLevel
       objectReference: {fileID: 0}
     - target: {fileID: 4244046177187234229, guid: 48cdb30870b1b734fa34a708435a3571, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_IntArgument
@@ -2016,7 +2000,7 @@ PrefabInstance:
       objectReference: {fileID: 1518895286}
     - target: {fileID: 4244046177230085174, guid: 48cdb30870b1b734fa34a708435a3571, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
-      value: BuyLevel
+      value: SelectLevel
       objectReference: {fileID: 0}
     - target: {fileID: 4244046177230085174, guid: 48cdb30870b1b734fa34a708435a3571, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_IntArgument
@@ -2064,7 +2048,7 @@ PrefabInstance:
       objectReference: {fileID: 1518895286}
     - target: {fileID: 4244046177956156726, guid: 48cdb30870b1b734fa34a708435a3571, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
-      value: BuyLevel
+      value: SelectLevel
       objectReference: {fileID: 0}
     - target: {fileID: 4244046177956156726, guid: 48cdb30870b1b734fa34a708435a3571, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_IntArgument
@@ -2084,7 +2068,7 @@ PrefabInstance:
       objectReference: {fileID: 1518895286}
     - target: {fileID: 4244046178107577212, guid: 48cdb30870b1b734fa34a708435a3571, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
-      value: BuyLevel
+      value: SelectLevel
       objectReference: {fileID: 0}
     - target: {fileID: 4244046178107577212, guid: 48cdb30870b1b734fa34a708435a3571, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_IntArgument
@@ -2208,7 +2192,7 @@ PrefabInstance:
       objectReference: {fileID: 1518895286}
     - target: {fileID: 4244046178435460297, guid: 48cdb30870b1b734fa34a708435a3571, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
-      value: BuyLevel
+      value: SelectLevel
       objectReference: {fileID: 0}
     - target: {fileID: 4244046178509683670, guid: 48cdb30870b1b734fa34a708435a3571, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target

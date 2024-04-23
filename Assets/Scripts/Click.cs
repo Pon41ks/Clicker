@@ -1,16 +1,12 @@
-
-using System.Collections;
-using System.Collections.Generic;
 using TMPro;
 using UnityEngine;
 using UnityEngine.UI;
 using UnityEngine.Events;
-using UnityEngine.SceneManagement;
 
 public class Click : MonoBehaviour
 {
     [Header("Parameters")]
-    [SerializeField] private int score;
+    private int _score;
     [SerializeField] private int maxValue;
     [SerializeField] private int currentLevel;
 
@@ -22,27 +18,29 @@ public class Click : MonoBehaviour
 
     public static readonly UnityEvent<int> AddScore = new();
 
-    private void GetcurrentFill()
+    private void Start()
     {
-        float fillAmount = (float)score / (float)maxValue;
+        _score = 0;
+    }
+
+    private void RefreshFill()
+    {
+        float fillAmount = (float)_score / (float)maxValue;
         mask.fillAmount = fillAmount;
     }
 
     public void OnClick()
     {
-        if (score != maxValue)
+        if (_score < maxValue)
         {
             Balance.AddCoin();
-            score++;
-            currentClicks.text = $"{score} / {maxValue}";
-            GetcurrentFill();
-            AddScore.Invoke(score);
+            _score++;
+        }
+        currentClicks.text = $"{_score} / {maxValue}";
+        RefreshFill();
+        if (_score >= maxValue)
+        {
+            AddScore.Invoke(_score);
         }
     }
-
-  
-
-
-
-
 }
