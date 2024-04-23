@@ -17,7 +17,7 @@ public class BalanceView : MonoBehaviour
     }
     private void ChangeCoinCount()
     {
-        coinsText.text = Balance.coins.ToString();
+        coinsText.text = SaveData.Current.coinsCount.ToString();
     }
 
     

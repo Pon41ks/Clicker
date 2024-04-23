@@ -34,7 +34,6 @@ RectTransform:
   m_Children:
   - {fileID: 4244046177755368500}
   m_Father: {fileID: 4244046177525994942}
-  m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 1}
   m_AnchorMax: {x: 0, y: 1}
@@ -93,8 +92,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   levelName: Level2
   price: 90
-  access: 0
   levelNumber: 1
+  isCollected: 0
   levelClosed: {fileID: 4244046176746866255}
   blockImage: {fileID: 4244046177755368501}
   unBlock: {fileID: 21300000, guid: 197a67d4b343c4f4199772304fb8308f, type: 3}
@@ -143,14 +142,14 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 4244046176746866253}
-        m_TargetAssemblyTypeName: LevelControl, Assembly-CSharp
+      - m_Target: {fileID: 6401557996669197628}
+        m_TargetAssemblyTypeName: LevelAccessControl, Assembly-CSharp
         m_MethodName: BuyLevel
-        m_Mode: 1
+        m_Mode: 3
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
+          m_IntArgument: 1
           m_FloatArgument: 0
           m_StringArgument: 
           m_BoolArgument: 0
@@ -186,7 +185,6 @@ RectTransform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 4244046177187234233}
-  m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0}
   m_AnchorMax: {x: 0.5, y: 0}
@@ -261,7 +259,6 @@ RectTransform:
   m_Children:
   - {fileID: 4244046177892315863}
   m_Father: {fileID: 4244046178122550961}
-  m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
@@ -299,7 +296,6 @@ RectTransform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 4244046177230085179}
-  m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0}
   m_AnchorMax: {x: 0.5, y: 0}
@@ -378,7 +374,6 @@ RectTransform:
   m_Children:
   - {fileID: 4244046177002360362}
   m_Father: {fileID: 4244046177525994942}
-  m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 1}
   m_AnchorMax: {x: 0, y: 1}
@@ -467,14 +462,14 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 4244046177187234228}
-        m_TargetAssemblyTypeName: LevelControl, Assembly-CSharp
+      - m_Target: {fileID: 6401557996669197628}
+        m_TargetAssemblyTypeName: LevelAccessControl, Assembly-CSharp
         m_MethodName: BuyLevel
-        m_Mode: 1
+        m_Mode: 3
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
+          m_IntArgument: 3
           m_FloatArgument: 0
           m_StringArgument: 
           m_BoolArgument: 0
@@ -493,8 +488,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   levelName: Level4
   price: 280
-  access: 0
   levelNumber: 3
+  isCollected: 0
   levelClosed: {fileID: 4244046177187234230}
   blockImage: {fileID: 4244046177002360363}
   unBlock: {fileID: 21300000, guid: 197a67d4b343c4f4199772304fb8308f, type: 3}
@@ -533,7 +528,6 @@ RectTransform:
   m_Children:
   - {fileID: 4244046177131942478}
   m_Father: {fileID: 4244046177525994942}
-  m_RootOrder: 5
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 1}
   m_AnchorMax: {x: 0, y: 1}
@@ -592,8 +586,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   levelName: Level6
   price: 500
-  access: 0
   levelNumber: 5
+  isCollected: 0
   levelClosed: {fileID: 4244046177230085176}
   blockImage: {fileID: 4244046177131942479}
   unBlock: {fileID: 21300000, guid: 197a67d4b343c4f4199772304fb8308f, type: 3}
@@ -642,14 +636,14 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 4244046177230085175}
-        m_TargetAssemblyTypeName: LevelControl, Assembly-CSharp
+      - m_Target: {fileID: 6401557996669197628}
+        m_TargetAssemblyTypeName: LevelAccessControl, Assembly-CSharp
         m_MethodName: BuyLevel
-        m_Mode: 1
+        m_Mode: 3
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
+          m_IntArgument: 5
           m_FloatArgument: 0
           m_StringArgument: 
           m_BoolArgument: 0
@@ -685,7 +679,6 @@ RectTransform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 4244046178122550961}
-  m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
@@ -763,7 +756,6 @@ RectTransform:
   - {fileID: 4244046178371824373}
   - {fileID: 4244046178122550961}
   m_Father: {fileID: 4244046178378088045}
-  m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
@@ -790,6 +782,7 @@ Animator:
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorStateOnDisable: 0
+  m_WriteDefaultValuesOnDisable: 0
 --- !u!114 &4244046177507064156
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -804,6 +797,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   shopCanvas: {fileID: 4244046178122550965}
   openShopButton: {fileID: 4244046178371824372}
+  VictoryPanel: {fileID: 0}
 --- !u!1 &4244046177525994817
 GameObject:
   m_ObjectHideFlags: 0
@@ -814,6 +808,7 @@ GameObject:
   m_Component:
   - component: {fileID: 4244046177525994942}
   - component: {fileID: 4244046177525994943}
+  - component: {fileID: 6401557996669197628}
   m_Layer: 5
   m_Name: content
   m_TagString: Untagged
@@ -840,7 +835,6 @@ RectTransform:
   - {fileID: 4244046177956156731}
   - {fileID: 4244046177230085179}
   m_Father: {fileID: 4244046177892315863}
-  m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0}
   m_AnchorMax: {x: 0.5, y: 0}
@@ -871,6 +865,25 @@ MonoBehaviour:
   m_Spacing: {x: 0, y: 569.5}
   m_Constraint: 0
   m_ConstraintCount: 1
+--- !u!114 &6401557996669197628
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4244046177525994817}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: cc0152778b1654e5aac1b288988a8361, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  checkAccess:
+  - {fileID: 4244046178435460296}
+  - {fileID: 4244046176746866253}
+  - {fileID: 4244046178107577215}
+  - {fileID: 4244046177187234228}
+  - {fileID: 4244046177956156727}
+  - {fileID: 4244046177230085175}
 --- !u!1 &4244046177583944817
 GameObject:
   m_ObjectHideFlags: 0
@@ -903,7 +916,6 @@ RectTransform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 4244046178122550961}
-  m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 1, y: 1}
   m_AnchorMax: {x: 1, y: 1}
@@ -1035,7 +1047,6 @@ RectTransform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 4244046178122550961}
-  m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 1}
   m_AnchorMax: {x: 0.5, y: 1}
@@ -1111,7 +1122,6 @@ RectTransform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 4244046178435460301}
-  m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0}
   m_AnchorMax: {x: 0.5, y: 0}
@@ -1187,7 +1197,6 @@ RectTransform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 4244046178497444640}
-  m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
@@ -1322,7 +1331,6 @@ RectTransform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 4244046177956156731}
-  m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0}
   m_AnchorMax: {x: 0.5, y: 0}
@@ -1398,7 +1406,6 @@ RectTransform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 4244046176746866254}
-  m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0}
   m_AnchorMax: {x: 0.5, y: 0}
@@ -1475,7 +1482,6 @@ RectTransform:
   m_Children:
   - {fileID: 4244046177525994942}
   m_Father: {fileID: 4244046177066947643}
-  m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
@@ -1560,7 +1566,6 @@ RectTransform:
   m_Children:
   - {fileID: 4244046177741360739}
   m_Father: {fileID: 4244046177525994942}
-  m_RootOrder: 4
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 1}
   m_AnchorMax: {x: 0, y: 1}
@@ -1619,8 +1624,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   levelName: level5
   price: 400
-  access: 0
   levelNumber: 4
+  isCollected: 0
   levelClosed: {fileID: 4244046177956156728}
   blockImage: {fileID: 4244046177741360736}
   unBlock: {fileID: 21300000, guid: 197a67d4b343c4f4199772304fb8308f, type: 3}
@@ -1669,14 +1674,14 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 4244046177956156727}
-        m_TargetAssemblyTypeName: LevelControl, Assembly-CSharp
+      - m_Target: {fileID: 6401557996669197628}
+        m_TargetAssemblyTypeName: LevelAccessControl, Assembly-CSharp
         m_MethodName: BuyLevel
-        m_Mode: 1
+        m_Mode: 3
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
+          m_IntArgument: 4
           m_FloatArgument: 0
           m_StringArgument: 
           m_BoolArgument: 0
@@ -1715,7 +1720,6 @@ RectTransform:
   m_Children:
   - {fileID: 4244046178499461256}
   m_Father: {fileID: 4244046177525994942}
-  m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 1}
   m_AnchorMax: {x: 0, y: 1}
@@ -1774,8 +1778,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   levelName: Level3
   price: 190
-  access: 0
   levelNumber: 2
+  isCollected: 0
   levelClosed: {fileID: 4244046178107577089}
   blockImage: {fileID: 4244046178499461257}
   unBlock: {fileID: 21300000, guid: 197a67d4b343c4f4199772304fb8308f, type: 3}
@@ -1824,14 +1828,14 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 4244046178107577215}
-        m_TargetAssemblyTypeName: LevelControl, Assembly-CSharp
+      - m_Target: {fileID: 6401557996669197628}
+        m_TargetAssemblyTypeName: LevelAccessControl, Assembly-CSharp
         m_MethodName: BuyLevel
-        m_Mode: 1
+        m_Mode: 3
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
+          m_IntArgument: 2
           m_FloatArgument: 0
           m_StringArgument: 
           m_BoolArgument: 0
@@ -1872,7 +1876,6 @@ RectTransform:
   - {fileID: 4244046177066947643}
   - {fileID: 4244046177583944814}
   m_Father: {fileID: 4244046177507064154}
-  m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
@@ -1896,7 +1899,9 @@ Canvas:
   m_OverrideSorting: 0
   m_OverridePixelPerfect: 0
   m_SortingBucketNormalizedSize: 0
+  m_VertexColorAlwaysGammaSpace: 0
   m_AdditionalShaderChannelsFlag: 0
+  m_UpdateRectTransformForStandalone: 0
   m_SortingLayerID: 0
   m_SortingOrder: 0
   m_TargetDisplay: 0
@@ -1972,7 +1977,6 @@ RectTransform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 4244046177507064154}
-  m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 1, y: 1}
   m_AnchorMax: {x: 1, y: 1}
@@ -2105,7 +2109,6 @@ RectTransform:
   - {fileID: 4244046178497444640}
   - {fileID: 4244046177507064154}
   m_Father: {fileID: 0}
-  m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
@@ -2146,7 +2149,6 @@ RectTransform:
   m_Children:
   - {fileID: 4244046177633864563}
   m_Father: {fileID: 4244046177525994942}
-  m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 1}
   m_AnchorMax: {x: 0, y: 1}
@@ -2235,10 +2237,10 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 4244046178435460296}
-        m_TargetAssemblyTypeName: LevelControl, Assembly-CSharp
+      - m_Target: {fileID: 6401557996669197628}
+        m_TargetAssemblyTypeName: LevelAccessControl, Assembly-CSharp
         m_MethodName: BuyLevel
-        m_Mode: 1
+        m_Mode: 3
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
@@ -2261,8 +2263,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   levelName: level1
   price: 0
-  access: 0
   levelNumber: 0
+  isCollected: 0
   levelClosed: {fileID: 4244046178435460298}
   blockImage: {fileID: 4244046177633864560}
   unBlock: {fileID: 21300000, guid: 197a67d4b343c4f4199772304fb8308f, type: 3}
@@ -2300,7 +2302,6 @@ RectTransform:
   m_Children:
   - {fileID: 4244046177720588247}
   m_Father: {fileID: 4244046178378088045}
-  m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 1}
   m_AnchorMax: {x: 0.5, y: 1}
@@ -2389,7 +2390,6 @@ RectTransform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 4244046178107577088}
-  m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0}
   m_AnchorMax: {x: 0.5, y: 0}
@@ -2439,6 +2439,7 @@ PrefabInstance:
   m_ObjectHideFlags: 0
   serializedVersion: 2
   m_Modification:
+    serializedVersion: 3
     m_TransformParent: {fileID: 4244046178378088045}
     m_Modifications:
     - target: {fileID: 3123849462234944516, guid: 0f36d04619aab3548a710b4f5a4956f3, type: 3}
@@ -2538,6 +2539,9 @@ PrefabInstance:
       value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 0f36d04619aab3548a710b4f5a4956f3, type: 3}
 --- !u!224 &4244046177703095064 stripped
 RectTransform:

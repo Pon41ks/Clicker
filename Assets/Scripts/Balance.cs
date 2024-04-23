@@ -12,8 +12,9 @@ public static class Balance
 
     public static void AddCoin()
     {
-        coins++;
-        PlayerPrefs.SetInt("Coin", coins);
+
+        SaveData.Current.coinsCount++;
+        //PlayerPrefs.SetInt("Coin", coins);
         takeCoin.Invoke();
     }
    

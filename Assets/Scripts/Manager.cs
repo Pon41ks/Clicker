@@ -20,17 +20,26 @@ public class Manager : MonoBehaviour
 
     [SerializeField] private GameObject clickButton;
     [SerializeField] private GameObject shopCloseButton;
+    [SerializeField] private GameObject victoryEffect;
 
     private void Awake()
     {
         Click.AddScore.AddListener(ChangeImageAndShowVictoryPanel);
+        SaveData.Current = (SaveData)SerializationManager.Load();
+                
 
     }
-    void Start()
+    private void Update()
+    {
+        Win();
+    }
+    private void Start()
     {
         gameAnimator = GetComponent<Animator>();
         gameAnimator.SetTrigger("FirstAnim");
-        Balance.coins = PlayerPrefs.GetInt("Coin");
+        Debug.Log(SaveData.Current.coinsCount);
+        SerializationManager.Save(SaveData.Current);
+
 
     }
 
@@ -46,6 +55,7 @@ public class Manager : MonoBehaviour
             gameAnimator.SetTrigger("ChangeImage");
             gameAnimator.SetTrigger("Victory");
             shopCloseButton.SetActive(false);
+            
 
         }
  
@@ -54,6 +64,15 @@ public class Manager : MonoBehaviour
     public void ChangeSprite()
     {
         imageObj.sprite = result;
+    }
+
+    private void Win()
+    {
+        if (victoryEffect.activeInHierarchy)
+        {
+            SerializationManager.Save(SaveData.Current);
+            
+        }
     }
 
 }

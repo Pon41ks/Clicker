@@ -40,19 +40,7 @@ public class Click : MonoBehaviour
         }
     }
 
-    public void NextLevel()
-    {
-        if (currentLevel != 5)
-        {
-            SceneManager.LoadScene(currentLevel + 1);
-
-        }
-
-        else
-        {
-            SceneManager.LoadScene(currentLevel);
-        }
-    }
+  
 
 
 
