@@ -294,19 +294,23 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 32759820316437416, guid: df69989aaca60a24db06d9c9be7c8504, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Mode
-      value: 1
+      value: 3
       objectReference: {fileID: 0}
     - target: {fileID: 32759820316437416, guid: df69989aaca60a24db06d9c9be7c8504, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
       value: 
-      objectReference: {fileID: 590485815}
+      objectReference: {fileID: 1767145944}
     - target: {fileID: 32759820316437416, guid: df69989aaca60a24db06d9c9be7c8504, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
       value: GoToNextLevel
       objectReference: {fileID: 0}
     - target: {fileID: 32759820316437416, guid: df69989aaca60a24db06d9c9be7c8504, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_TargetAssemblyTypeName
-      value: LevelControl, Assembly-CSharp
+      value: ToNextLevel, Assembly-CSharp
+      objectReference: {fileID: 0}
+    - target: {fileID: 32759820316437416, guid: df69989aaca60a24db06d9c9be7c8504, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_IntArgument
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 32759820319346568, guid: df69989aaca60a24db06d9c9be7c8504, type: 3}
       propertyPath: m_AnchoredPosition.y
@@ -423,7 +427,10 @@ PrefabInstance:
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
-    m_AddedComponents: []
+    m_AddedComponents:
+    - targetCorrespondingSourceObject: {fileID: 32759822065958477, guid: df69989aaca60a24db06d9c9be7c8504, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 1767145944}
   m_SourcePrefab: {fileID: 100100000, guid: df69989aaca60a24db06d9c9be7c8504, type: 3}
 --- !u!224 &312647530 stripped
 RectTransform:
@@ -636,17 +643,6 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &590485815 stripped
-MonoBehaviour:
-  m_CorrespondingSourceObject: {fileID: 4244046178435460296, guid: 48cdb30870b1b734fa34a708435a3571, type: 3}
-  m_PrefabInstance: {fileID: 4244046176676305726}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: fed82bd848673fe429b1902b0d005592, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!114 &697156227 stripped
 MonoBehaviour:
   m_CorrespondingSourceObject: {fileID: 4244046178509683671, guid: 48cdb30870b1b734fa34a708435a3571, type: 3}
@@ -1609,6 +1605,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3ec8d1817530a4744b44284241248ec2, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  _score: 0
   maxValue: 30
   currentLevel: 0
   gameCanvas: {fileID: 0}
@@ -1710,6 +1707,18 @@ AudioSource:
   m_CorrespondingSourceObject: {fileID: 1913969060036619655, guid: df69989aaca60a24db06d9c9be7c8504, type: 3}
   m_PrefabInstance: {fileID: 312647529}
   m_PrefabAsset: {fileID: 0}
+--- !u!114 &1767145944
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1767145942}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9d72cf7428b5141a29055fa9d72e7b54, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!224 &1806771539 stripped
 RectTransform:
   m_CorrespondingSourceObject: {fileID: 4244046178378088045, guid: 48cdb30870b1b734fa34a708435a3571, type: 3}
@@ -1848,6 +1857,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3ec8d1817530a4744b44284241248ec2, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  _score: 0
   maxValue: 30
   currentLevel: 0
   gameCanvas: {fileID: 1027554068}

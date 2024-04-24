@@ -8,6 +8,7 @@ public  class LevelAccessControl : MonoBehaviour
     {
         for (var i = 0; i < checkAccess.Length; i++)
         {
+            Debug.Log(SaveData.Current.levels[i]);
             if (checkAccess.Length != SaveData.Current.levels.Length)
             {
                 SaveData.Current.levels = new bool[checkAccess.Length];
@@ -28,5 +29,8 @@ public  class LevelAccessControl : MonoBehaviour
         {
             SceneManager.LoadScene(indexLevel);
         }
+
     }
+
+
 }

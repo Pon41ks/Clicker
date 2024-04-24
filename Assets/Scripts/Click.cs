@@ -6,7 +6,7 @@ using UnityEngine.Events;
 public class Click : MonoBehaviour
 {
     [Header("Parameters")]
-    private int _score;
+    [SerializeField] private int _score;
     [SerializeField] private int maxValue;
     [SerializeField] private int currentLevel;
 

@@ -24,6 +24,7 @@ public class Manager : MonoBehaviour
     }
     private void Start()
     {
+        Debug.Log(Application.persistentDataPath);
         gameAnimator = GetComponent<Animator>();
         gameAnimator.SetTrigger("FirstAnim");
         Debug.Log(SaveData.Current.coinsCount);
@@ -37,8 +38,9 @@ public class Manager : MonoBehaviour
     }
     public void ChangeImageAndShowVictoryPanel(int score)
     {
-        if(score == maxValueScore)
+        if(score >= maxValueScore)
         {
+            
             gameAnimator.SetTrigger("ChangeImage");
             gameAnimator.SetTrigger("Victory");
             shopCloseButton.SetActive(false);

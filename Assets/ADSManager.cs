@@ -10,7 +10,7 @@ public class ADSManager : MonoBehaviour
 
     private void Start()
     {
-        totalCoinsTxt.text = PlayerPrefs.GetInt("totalCoin").ToString();
+        totalCoinsTxt.text = SaveData.Current.coinsCount.ToString();
         IronSource.Agent.validateIntegration();
         IronSource.Agent.init(appKey);
     }
@@ -171,7 +171,7 @@ public class ADSManager : MonoBehaviour
 
 
     /************* RewardedVideo AdInfo Delegates *************/
-    // Indicates that there’s an available ad.
+    // Indicates that there?s an available ad.
     // The adInfo object includes information about the ad that was loaded successfully
     // This replaces the RewardedVideoAvailabilityChangedEvent(true) event
     void RewardedVideoOnAdAvailable(IronSourceAdInfo adInfo)
@@ -207,7 +207,7 @@ public class ADSManager : MonoBehaviour
     }
     // Invoked when the video ad was clicked.
     // This callback is not supported by all networks, and we recommend using it only if
-    // it’s supported by all networks you included in your build.
+    // it?s supported by all networks you included in your build.
     void RewardedVideoOnAdClickedEvent(IronSourcePlacement placement, IronSourceAdInfo adInfo)
     {
     }

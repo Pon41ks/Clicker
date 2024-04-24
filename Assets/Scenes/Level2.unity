@@ -902,17 +902,6 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 852237485}
   m_CullTransparentMesh: 1
---- !u!114 &903268795 stripped
-MonoBehaviour:
-  m_CorrespondingSourceObject: {fileID: 4244046178435460296, guid: 48cdb30870b1b734fa34a708435a3571, type: 3}
-  m_PrefabInstance: {fileID: 1249128885}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: fed82bd848673fe429b1902b0d005592, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!114 &1079780639 stripped
 MonoBehaviour:
   m_CorrespondingSourceObject: {fileID: 7904481550855674315, guid: 6930a12f91f6ec94b83a3906bd0263f7, type: 3}
@@ -1272,7 +1261,6 @@ MonoBehaviour:
   result: {fileID: 21300000, guid: 14d3cf9cf0de1f4488142c90cd7da2ec, type: 3}
   clickButton: {fileID: 189168527}
   shopCloseButton: {fileID: 1552434050}
-  victoryEffect: {fileID: 845516790}
 --- !u!114 &1561407293
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1285,7 +1273,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3ec8d1817530a4744b44284241248ec2, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  score: 0
+  _score: 0
   maxValue: 90
   currentLevel: 1
   gameCanvas: {fileID: 31267141}
@@ -1432,7 +1420,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3ec8d1817530a4744b44284241248ec2, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  score: 0
+  _score: 0
   maxValue: 30
   currentLevel: 0
   gameCanvas: {fileID: 0}
@@ -1497,16 +1485,24 @@ PrefabInstance:
     m_TransformParent: {fileID: 31267142}
     m_Modifications:
     - target: {fileID: 32759820316437416, guid: df69989aaca60a24db06d9c9be7c8504, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Mode
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 32759820316437416, guid: df69989aaca60a24db06d9c9be7c8504, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
       value: 
-      objectReference: {fileID: 903268795}
+      objectReference: {fileID: 1883199193}
     - target: {fileID: 32759820316437416, guid: df69989aaca60a24db06d9c9be7c8504, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
-      value: NextLevel
+      value: GoToNextLevel
       objectReference: {fileID: 0}
     - target: {fileID: 32759820316437416, guid: df69989aaca60a24db06d9c9be7c8504, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_TargetAssemblyTypeName
-      value: LevelControl, Assembly-CSharp
+      value: ToNextLevel, Assembly-CSharp
+      objectReference: {fileID: 0}
+    - target: {fileID: 32759820316437416, guid: df69989aaca60a24db06d9c9be7c8504, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_IntArgument
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 32759822065958476, guid: df69989aaca60a24db06d9c9be7c8504, type: 3}
       propertyPath: m_Pivot.x
@@ -1611,7 +1607,10 @@ PrefabInstance:
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
-    m_AddedComponents: []
+    m_AddedComponents:
+    - targetCorrespondingSourceObject: {fileID: 32759822065958477, guid: df69989aaca60a24db06d9c9be7c8504, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 1883199193}
   m_SourcePrefab: {fileID: 100100000, guid: df69989aaca60a24db06d9c9be7c8504, type: 3}
 --- !u!114 &1804973230 stripped
 MonoBehaviour:
@@ -1846,6 +1845,18 @@ AudioSource:
   m_CorrespondingSourceObject: {fileID: 1913969060036619655, guid: df69989aaca60a24db06d9c9be7c8504, type: 3}
   m_PrefabInstance: {fileID: 1776515168}
   m_PrefabAsset: {fileID: 0}
+--- !u!114 &1883199193
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1883199190}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9d72cf7428b5141a29055fa9d72e7b54, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1926389710
 GameObject:
   m_ObjectHideFlags: 0
